@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: chooser-back
+    env: docker
+    buildCommand: ./mvnw clean package -DskipTests
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: POSTGRES_URL
+        fromDatabase:
+          name: chooser-db
+          property: connectionString
+      - key: POSTGRES_USER
+        fromDatabase:
+          name: chooser-db
+          property: user
+      - key: POSTGRES_PASSWORD
+        fromDatabase:
+          name: chooser-db
+          property: password
+
+databases:
+  - name: chooser-db
+    plan: free
+    databaseName: chooserdb 

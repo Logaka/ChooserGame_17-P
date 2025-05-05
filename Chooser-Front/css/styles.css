@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+    scrollbar-gutter: stable;
+}
+
+#top-bar {
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7em 1em;
+    z-index: 100;
+}
+
+.top-bar-left, .top-bar-right {
+    display: flex;
+    align-items: center;
+}
+
+#burger-menu, #ai-prompt-btn {
+    font-size: 2rem;
+    margin: 0.4rem 0.3rem;
+    border-radius: 0.5em;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: none;
+}
+
+#burger-menu, #ai-prompt-btn {
+    color: white;
+    background-color: inherit;
+    border-color: inherit;
+}
+
+#board {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#description {
+    z-index: 1;
+    text-align: center;
+    margin: 2em;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+
+
+/* Стили для кастомного Bootstrap-модального окна под тёмную тему */
+.modal-content {
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 10px;
+}
+
+.modal-header,
+.modal-footer {
+    border-color: #333;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+}
+
+.btn-close {
+    filter: invert(1);
+}
+
+.form-label {
+    margin-bottom: 0.3rem;
+}
+
+.form-select,
+.form-control {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.form-select:focus,
+.form-control:focus {
+    background-color: #222;
+    color: #fff;
+    border-color: #555;
+    box-shadow: none;
+}
+
+.form-check-input {
+    background-color: #222;
+    border: 1px solid #444;
+}
+
+.form-check-input:checked {
+    background-color: #0d6efd; /* Bootstrap blue */
+    border-color: #0d6efd;
+}
+
+.btn-secondary {
+    background-color: #444;
+    border-color: #666;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #555;
+    border-color: #777;
+}
+
+.form-select:disabled,
+.form-control:disabled{
+    background-color: #222;
+    color: #444444;
+}
+
+/* task modal */
+
+#taskModal .modal-content{
+    background-color: #222;
+    color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+}
+
+#taskModal .modal-header {
+    border-bottom: none;
+}
+
+#taskModal .modal-body {
+    font-size: 1.5rem;
+}
+
+#taskModal #taskText {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#taskModal #taskTimer {
+    font-size: 1.2rem;
+    color: #ffcc00;
+    margin-top: 10px;
+}
+
+#eliminationButtons button {
+    min-width: 120px;
+}
