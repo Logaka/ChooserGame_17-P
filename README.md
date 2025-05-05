@@ -82,13 +82,13 @@ npm start
 Alternatively, you can simply open `index.html` in a web browser if you're not using a build process.
 
 ## Usage Guide
-
-### Backend API Endpoints
+### API Endpoints
 
 #### Start a Game Session
-```json
+```
 POST /api/v1/start
 ```
+
 **Random Mode Example:**
 ```json
 {
@@ -99,6 +99,15 @@ POST /api/v1/start
 }
 ```
 
+**Response:**
+```json
+{
+    "sessionId": null,
+    "choosenPlayerId": 3,
+    "task": null
+}
+```
+
 **Task Mode Example:**
 ```json
 {
@@ -106,6 +115,30 @@ POST /api/v1/start
     "gameOption": {
         "mode": "TASK",
         "taskLevel": "EASY"
+    }
+}
+```
+
+**Response:**
+```json
+{
+    "sessionId": "some-session-id",
+    "choosenPlayerId": 2,
+    "task": {
+        "text": "Спой куплет детской песни",
+        "level": "EASY"
+    }
+}
+```
+
+**Custom AI Task Example:**
+```json
+{
+    "playerIds": [1, 2, 3, 4],
+    "gameOption": {
+        "mode": "TASK",
+        "taskLevel": "MEDIUM",
+        "prompt": "что-то связанное с танцами"
     }
 }
 ```
