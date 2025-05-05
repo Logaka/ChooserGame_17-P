@@ -30,7 +30,7 @@ Group decision-making often involves random selection to ensure fairness, but tr
 ### Local Setup (Backend)
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/Chooser-Back.git
+git clone https://github.com/Logaka/ChooserGame_17-P/tree/main/Chooser-Back
 
 # 2. Navigate to the project directory
 cd Chooser-Back
@@ -52,7 +52,7 @@ cd Chooser-Back
 ### Docker Setup (Backend)
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/Chooser-Back.git
+git clone https://github.com/Logaka/ChooserGame_17-P/tree/main/Chooser-Back
 
 # 2. Navigate to the project directory
 cd Chooser-Back
@@ -67,16 +67,15 @@ docker-compose up -d
 ### Local Setup (Frontend)
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/Chooser-Front.git
-
+git clone https://github.com/Logaka/ChooserGame_17-P/tree/main/Chooser-Front
 # 2. Navigate into the project directory
 cd Chooser-Front
 
 # 3. Install dependencies
-npm install
+npm install -g live-server
 
 # 4. Start the application
-npm start
+live-server --host=0.0.0.0 --port=8000
 ```
 
 Alternatively, you can simply open `index.html` in a web browser if you're not using a build process.
