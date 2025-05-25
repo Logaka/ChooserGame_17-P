@@ -181,10 +181,3 @@ POST /api/v1/start
 - [Pointer Events API](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events)
 - [Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
-## Team Members
-- Askar Alisher, 220103194, 17-P
-- Bekkalieva Ainara, 220103093, 17-P
-- Zhalgas Daniyar, 220103080, 17-P
-- Sairambay Nurbol, 220103096, 17-P
-- Toibayev Nursultan, 220103044, 17-P
-- Sabit Ulan, 220103244, 17-P
